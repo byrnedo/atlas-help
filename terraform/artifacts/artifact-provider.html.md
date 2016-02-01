@@ -18,7 +18,7 @@ is defined and references an AMI ID stored in Atlas.
     resource "atlas_artifact" "web-worker" {
       name = "acmeinc/web-worker"
       type = "amazon.image"
-      version = "latest"
+      build = "latest"
     }
 
     resource "aws_instance" "worker-machine" {
